@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /*   display: flex; */
+  /*   justify-content: center;
+    align-content: center;  */
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+main {
+  border: 2px solid red;
+  width: 40%;
+  padding: 5%;
+  margin: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+/* this allows img to flex with container */
+main img {
+  width: 100%;
+}
+
+.movie-info,
+.overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Change flex-direction: column; to flex-direction: row; on card. Then you just have to define a width for thumb because you are using it as a background image. So I set width: 100%; to thumb. */
